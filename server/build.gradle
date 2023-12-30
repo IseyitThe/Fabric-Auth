@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+dependencies {
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'me.seyit.socketauthserver.SocketAuthServer',
+        )
+    }
+    archiveFileName = 'server.jar'
+}

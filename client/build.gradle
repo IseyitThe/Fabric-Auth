@@ -1,0 +1,26 @@
+plugins {
+    id 'fabric-loom' version '1.0-SNAPSHOT'
+    id 'java'
+}
+
+repositories {
+}
+
+archivesBaseName = "socket-auth-client"
+version = project.version
+group = project.maven_group
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+}
+
+
+processResources {
+    inputs.property "version", project.version
+}
+
+jar {
+    archiveFileName = 'client.jar'
+}
