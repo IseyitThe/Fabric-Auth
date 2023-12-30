@@ -1,4 +1,4 @@
-# Fabric-Auth
+# Fabric-Auth-HWID
 Minecraft Fabric HWID Auth System with Socket Server
 
 Simple HWID Authentication System for Minecraft Fabric mods.
