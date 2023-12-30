@@ -1,13 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "socketauth",
-  "version": "${version}",
+  "version": "1.0",
   "name": "SocketAuth",
   "description": "",
   "authors": [],
-  "contact": {
-    "repo": "https://github.com/Seyit/SocketAuth"
-  },
   "license": "All-Rights-Reserved",
   "environment": "*",
   "entrypoints": {
