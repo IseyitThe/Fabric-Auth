@@ -51,13 +51,17 @@ public class SocketAuthClient implements ClientModInitializer {
 
         StringBuilder encoded = new StringBuilder();
         for (String property : components) {
-            for (int i = 0; i < property.length(); i++) {
-                int value = property.charAt(i) - ' ';
-                encoded.append(value);
+            if (property != null) {
+                for (int i = 0; i < property.length(); i++) {
+                    int value = property.charAt(i) - ' ';
+                    encoded.append(value);
+                }
+                encoded.append("-");
             }
-            encoded.append("-");
         }
-        encoded.setLength(encoded.length() - 1);
+        if (encoded.length() > 0) {
+            encoded.setLength(encoded.length() - 1);
+        }
 
         return encoded.toString();
     }
